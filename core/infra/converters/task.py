@@ -16,3 +16,4 @@ def convert_dict_to_task(task_dict: dict) -> Task:
         priority=task_dict["priority"],
         status=task_dict["status"]
     )
+

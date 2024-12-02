@@ -7,7 +7,7 @@ from core.infra.filters.task_filter import TaskFilter
 
 class BaseTaskManagerRepository(ABC):
     @abstractmethod
-    def get_tasks(self, task_filter: TaskFilter) -> List[Task]:
+    def get_tasks(self, task_filter: TaskFilter) -> str:
         ...
 
     @abstractmethod
@@ -23,5 +23,5 @@ class BaseTaskManagerRepository(ABC):
         ...
 
     @abstractmethod
-    def search_task(self, **kwargs) -> List[Task]:
+    def search_task(self, **kwargs) -> str:
         ...

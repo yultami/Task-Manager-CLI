@@ -26,7 +26,7 @@ class AddTaskCommand(BaseCommand):
 @dataclass(frozen=True)
 class EditTaskCommand(BaseCommand):
     id: int
-    kwargs: dict
+    kwargs: dict | None
 
 
 @dataclass(frozen=True)
@@ -36,14 +36,14 @@ class DelTaskCommand(BaseCommand):
 
 @dataclass(frozen=True)
 class SearchTaskCommand(BaseCommand):
-    kwargs: dict
+    kwargs: dict | None
 
 
 @dataclass(frozen=True)
-class GetTasksCommandHandler(BaseCommandHandler[GetTasksCommand, List[Task]]):
+class GetTasksCommandHandler(BaseCommandHandler[GetTasksCommand, str]):
     task_manager_repository: BaseTaskManagerRepository
 
-    def handle(self, command: GetTasksCommand) -> List[Task]:
+    def handle(self, command: GetTasksCommand) -> str:
         task_filter = TaskFilter(
             category=command.category
         )
@@ -73,7 +73,7 @@ class EditTaskCommandHandler(BaseCommandHandler[EditTaskCommand, None]):
     task_manager_repository: BaseTaskManagerRepository
 
     def handle(self, command: EditTaskCommand) -> None:
-        self.task_manager_repository.edit_task(command.id, **command.kwargs)
+        return self.task_manager_repository.edit_task(command.id, **command.kwargs)
 
 
 @dataclass(frozen=True)
@@ -81,7 +81,7 @@ class DelTaskCommandHandler(BaseCommandHandler[DelTaskCommand, None]):
     task_manager_repository: BaseTaskManagerRepository
 
     def handle(self, command: DelTaskCommand) -> None:
-        self.task_manager_repository.del_task(command.id)
+        return self.task_manager_repository.del_task(command.id)
 
 
 @dataclass(frozen=True)
@@ -89,4 +89,4 @@ class SearchTaskCommandHandler(BaseCommandHandler[SearchTaskCommand, List[Task]]
     task_manager_repository: BaseTaskManagerRepository
 
     def handle(self, command: SearchTaskCommand):
-        self.task_manager_repository.search_task(**command.kwargs)
+        return self.task_manager_repository.search_task(**command.kwargs)

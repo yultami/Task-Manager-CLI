@@ -6,17 +6,15 @@ from core.logic.mediator import Mediator
 
 
 def search_task_option_5():
-    title = input("Заголовок задачи для поиска (Enter - оставить пустым):")
-    category = input("Категория для поиска (Enter - оставить пустым): ")
-    status = input('Введите статус для поиска "Выполнена"/"Не выполнена" (Enter - оставить пустым): ')
+    print("Вы можете найти задачу по заголовку, категории и статусу выполнения!")
+    title = input("Заголовок (Enter - оставить пустым): ")
+    category = input("Категория (Enter - оставить пустым): ")
+    status = input("Статус (Выполнена/Не выполнена) (Enter - оставить пустым): ")
     kwargs = {}
-    if title:
-        kwargs['title'] = title
-    if category:
-        kwargs['category'] = category
-    if status:
-        kwargs['status'] = status
+    kwargs.update({"title": title}) if title else kwargs
+    kwargs.update({"category": category}) if category else kwargs
+    kwargs.update({"status": status}) if status else kwargs
     container: Container = init_container()
     mediator: Mediator = container.resolve(Mediator)
-    tasks = mediator.handle_command(SearchTaskCommand(**kwargs))
-    print(tasks)
+    tasks = mediator.handle_command(SearchTaskCommand(kwargs))
+    print(*tasks)

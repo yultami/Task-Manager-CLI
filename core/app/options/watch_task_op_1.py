@@ -10,4 +10,5 @@ def watch_task_option_1():
     container: Container = init_container()
     mediator: Mediator = container.resolve(Mediator)
     tasks = mediator.handle_command(GetTasksCommand(category if category else None))
-    print(tasks)
+    print(*tasks)
+

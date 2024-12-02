@@ -5,48 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f1e8765-7901-42be-a038-4eaaac56b6c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CLI_Task_Manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/cli_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/options/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/options/add_task_op_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/options/edit_task_op_3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/options/remove_task_op_4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/options/search_task_op_5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/app/options/watch_task_op_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/domain/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/domain/entities/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/domain/entities/task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/converters/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/converters/task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/filters/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/filters/task_filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/task_manager_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/logic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/logic/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/logic/commands/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/logic/commands/task_manager_commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/logic/container.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/logic/mediator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tests/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tests/repositories/task_manager_repo_test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tests/repositories/task_manager_repo_test/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/tests/repositories/task_manager_repo_test/task_manager_repo_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tasks_list.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/tasks_list_test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/app/options/edit_task_op_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/options/edit_task_op_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/app/options/search_task_op_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/options/search_task_op_5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/app/options/watch_task_op_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/options/watch_task_op_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/domain/entities/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/domain/entities/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/infra/converters/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/infra/converters/task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/task_manager_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/task_manager_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/logic/commands/task_manager_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/logic/commands/task_manager_commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/tasks_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/tasks_list.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,22 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in task_manager_repo_test.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.edit_task_op_3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task_manager_repo_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task_manager_repository.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/yulichka_portfolio/challenges_for_work/CLI_Task_Manager&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in task_manager_repo_test.py.executor": "Run",
+    "Python.conftest.executor": "Run",
+    "Python.edit_task_op_3.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.search_task_op_5.executor": "Run",
+    "Python.task.executor": "Run",
+    "Python.task_manager_repo_test.executor": "Run",
+    "Python.task_manager_repository.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.watch_task_op_1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/yulichka_portfolio/challenges_for_work/CLI_Task_Manager",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\yulichka_portfolio\challenges_for_work\CLI_Task_Manager\static" />
@@ -113,5 +84,16 @@
       <updated>1732816215935</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

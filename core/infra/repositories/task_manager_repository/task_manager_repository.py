@@ -2,8 +2,6 @@ import json
 
 from typing import List
 
-from punq import MissingDependencyError
-
 from core.domain.entities.task import Task
 from core.infra.converters.task import convert_task_to_dict, convert_dict_to_task
 from core.infra.filters.task_filter import TaskFilter
@@ -30,10 +28,10 @@ class TaskManagerRepository(BaseTaskManagerRepository):
         except IOError as e:
             print (f"Ошибка записи в файл: {e}")
 
-    def get_tasks(self, task_filter: TaskFilter) -> list[Task]:
+    def get_tasks(self, task_filter: TaskFilter) -> str:
         if task_filter.category is not None:
-            return [task for task in self._load_data() if task.category == task_filter.category]
-        return [task for task in self._load_data()]
+            return ''.join([task.convert_task_to_cli_view() for task in self._load_data() if task.category == task_filter.category])
+        return ''.join([task.convert_task_to_cli_view() for task in self._load_data()])
 
     def add_task(self, task: Task) -> None:
         task.id = len(self.data_task) + 1
@@ -52,8 +50,6 @@ class TaskManagerRepository(BaseTaskManagerRepository):
         self.data_task = [task for task in self.data_task if task.id != id]
         self._save_data()
 
-    def search_task(self, **kwargs) -> List[Task]:
-        tasks = self.data_task
+    def search_task(self, **kwargs) -> str:
         for key, value in kwargs.items():
-            tasks = [task for task in tasks if getattr(task, key) == value]
-        return tasks
+            return ''.join([task.convert_task_to_cli_view() for task in self._load_data() if getattr(task, key) == value])
