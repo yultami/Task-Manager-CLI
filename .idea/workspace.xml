@@ -45,13 +45,14 @@
     "Python.test.executor": "Run",
     "Python.watch_task_op_1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/yulichka_portfolio/challenges_for_work/Data-Source-API-Analyst-Test",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\yulichka_portfolio\challenges_for_work\CLI_Task_Manager" />
       <recent name="C:\yulichka_portfolio\challenges_for_work\CLI_Task_Manager\static" />
       <recent name="C:\yulichka_portfolio\challenges_for_work\CLI_Task_Manager\core" />
     </key>
