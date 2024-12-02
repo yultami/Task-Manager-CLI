@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f1e8765-7901-42be-a038-4eaaac56b6c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/options/edit_task_op_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/options/edit_task_op_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/options/search_task_op_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/options/search_task_op_5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/app/options/watch_task_op_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/app/options/watch_task_op_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/domain/entities/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/domain/entities/task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/infra/converters/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/infra/converters/task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/task_manager_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/infra/repositories/task_manager_repository/task_manager_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/logic/commands/task_manager_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/logic/commands/task_manager_commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/tasks_list.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/tasks_list.json" afterDir="false" />
-    </list>
+    <list default="true" id="2f1e8765-7901-42be-a038-4eaaac56b6c5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +33,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Python tests.Python tests in task_manager_repo_test.py.executor": "Run",
     "Python.conftest.executor": "Run",
     "Python.edit_task_op_3.executor": "Run",
@@ -57,7 +46,7 @@
     "Python.watch_task_op_1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/yulichka_portfolio/challenges_for_work/CLI_Task_Manager",
+    "last_opened_file_path": "C:/yulichka_portfolio/challenges_for_work/Data-Source-API-Analyst-Test",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
